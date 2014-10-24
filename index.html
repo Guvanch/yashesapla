@@ -7,7 +7,7 @@
 <meta name="GENERATOR" content="Microsoft FrontPage 6.0" />
 <meta name="ProgId" content="FrontPage.Editor.Document" />
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
-<title>Yaşymy hasapla</title>
+<title>Yaş hesapla</title>
 <link rel="stylesheet" type="text/css" href="../bweb.css" />
 <SCRIPT LANGUAGE="JavaScript">
 
@@ -132,8 +132,8 @@ Age = CDate-BDate + (1000*60*60*24*30); document.my_age.yrs.value = ((((Age/1000
 <SCRIPT LANGUAGE="JavaScript">
 <!-- Begin
 var X_now = new Date();
-var X_days = new Array('Ýekşenbe','Duşenbe','Sişenbe','Çarşenbe','Penşenbe','Anna','Şenbe');
-var X_months = new Array('Ýanwar','Fewral','Mart','Aprel','May','Iýun','Iýul','Awgust','Sentýabr','Oktýabr','Noýabr','Dekabr');
+var X_days = new Array('Pazar','Pazartesi','Salı','Çarşamba','Perşenbe','Cuma','Cumartesi');
+var X_months = new Array('Ocak','Şubat','Mart','Nisan','Mayis','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık');
 var X_date = ((X_now.getDate()<10) ? "0" : "")+ X_now.getDate();
 
 function fourdigits(number)    {
@@ -157,26 +157,26 @@ document.write(X_today);
 				<p style="margin-center: 6px"><b><font size="3" face="Verdana">
 				
 
-		Ýaşyňyzy we Ýaşan Wagtyňyzy Hasaplama
+		Yaşınızı ve Yaşadığınız zamanı hesapla
 <form name="my_age">
 <div align="left">
 <table width="100%" border=0 cellspacing=0 cellpadding=2>
 <tr>
 <td align=center colspan=5>
-<p align="left"><font size="2"><b>Dogulan wagtyňyz</b><br>
-Ýyl</font><font face="Verdana">:<input name="birthy" type="text" size=4></font><font size="2"> 
+<p align="left"><font size="2"><b>Doğduğunuz an</b><br>
+Yıl</font><font face="Verdana">:<input name="birthy" type="text" size=4></font><font size="2"> 
 Ay:</font><font face="Verdana"><input name="birthm" type="text" size=2></font><font size="2">
 Gün:</font><font face="Verdana"><input name="birthd" type="text" size=2></font><font size="2"><br> 
-Sagat:</font><font face="Verdana"><input name="birthh" type="text" size=2></font><font size="2">
-Minut:</font><font face="Verdana"><input name="birthmin" type="text" size=2></font><font size="2"> 
-Sekunt:</font><font face="Verdana"><input name="births" type="text" size=2></font><font size="2">
+Saat:</font><font face="Verdana"><input name="birthh" type="text" size=2></font><font size="2">
+Dakka:</font><font face="Verdana"><input name="birthmin" type="text" size=2></font><font size="2"> 
+Saniye:</font><font face="Verdana"><input name="births" type="text" size=2></font><font size="2">
 </font>  
 </td>
 </tr>
 <tr>
 <td align=center colspan=5>
-<p align="left"><font face="Verdana"><font size="2">Anyk</font><input type="radio" name="accurate" value="ON" onClick="if (this.checked) {acc=1}"></font><font size="2">
-Ady san</font><font face="Verdana"><input type="radio" name="accurate" Value="OFF" onClick="if (this.checked) {acc=0}" checked></font><font size="2">
+<p align="left"><font face="Verdana"><font size="2">Kesin</font><input type="radio" name="accurate" value="ON" onClick="if (this.checked) {acc=1}"></font><font size="2">
+Tam sayı</font><font face="Verdana"><input type="radio" name="accurate" Value="OFF" onClick="if (this.checked) {acc=0}" checked></font><font size="2">
 </font>
 <input type="button" name="norm" value="Başla" onclick="startit()" style="font-family: Verdana; font-size: 10pt; font-weight: bold">
 <input type="button" name="norm" value="Dur" onclick="stopit()" style="font-family: Verdana; font-size: 10pt; color: #FF0000; font-weight: bold">
@@ -184,34 +184,34 @@ Ady san</font><font face="Verdana"><input type="radio" name="accurate" Value="OF
 
 <tr>                       
 <td width=13 align="right"></td>
-<td width=100><font size="2">Men...</font></td>
+<td width=100><font size="2">Ben...</font></td>
 <td width=200 align=center><font face="Verdana">
 <input type="text" name="yrs" size=15></font></td>
-<td width=340 align=left>  <font size="2">...ýaşymda</font></td>
+<td width=340 align=left>  <font size="2">...yaşındayım</font></td>
 </tr>
 <tr>
 <td align="right"><font color="#88f26f" size="2">.</td>
-<td><font size="2">Ýada...</font></td>
+<td><font size="2">Veya...</font></td>
 <td align=center><font face="Verdana"><input type="text" name="dys" size=15></font></td>
-<td align=left>  <font size="2">...günlük</font></td>
+<td align=left>  <font size="2">...günlüğüm</font></td>
 </tr>
 <tr>
 <td align="right"><font color="#88f26f" size="2">.</td>
-<td><font size="2">Ýada...</font></td>
+<td><font size="2">Veya...</font></td>
 <td align=center><font face="Verdana"><input type="text" name="hrs" size=15></font></td>
-<td align=left>  <font size="2">...sagatlyk</font></td>
+<td align=left>  <font size="2">...saatliğim</font></td>
 </tr>
 <tr>
 <td align="right"><font color="#88f26f" size="2">.</td>
-<td><font size="2">Ýada...</font></td>
+<td><font size="2">Veya...</font></td>
 <td align=center><font face="Verdana"><input type="text" name="mins" size=15></font></td>
-<td align=left>  <font size="2">...minutlyk</font></td>
+<td align=left>  <font size="2">...dakkalığım</font></td>
 </tr>
 <tr>
 <td align="center"><font color="#88f26f" size="2">.</td>
-<td><font size="2">Ýada...</font></td>
+<td><font size="2">Veya...</font></td>
 <td align=center><font face="Verdana"><input type="text" name="secs" size=15></font></td>
-<td align=left>  <font size="2">...sekuntlyk</font></td>
+<td align=left>  <font size="2">...saniyeliğim</font></td>
 </tr>
 </table>
 </div>
@@ -230,7 +230,7 @@ Ady san</font><font face="Verdana"><input type="radio" name="accurate" Value="OF
                     
                     
                     
-                    <h2 style="font-size:16">Burç Hasaplama</h2>
+         <h2 style="font-size:16">Burç Hesaplama</h2>
 
 	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
 		<div class="wpb_wrapper">
@@ -240,40 +240,40 @@ function sunsign() {
    document.form1.date.selectedIndex;
    document.form1.month.selectedIndex;
    document.form1.sign.value;
-   if (document.form1.month.selectedIndex == 1 && document.form1.date.selectedIndex <=19) {document.form1.sign.value = "Owlak";}
-   if (document.form1.month.selectedIndex == 1 && document.form1.date.selectedIndex >=20) {document.form1.sign.value = "Gowa";}
-   if (document.form1.month.selectedIndex == 2 && document.form1.date.selectedIndex <=18) {document.form1.sign.value = "Gowa";}
-   if (document.form1.month.selectedIndex == 2 && document.form1.date.selectedIndex >=19) {document.form1.sign.value = "Balyk";}
-   if (document.form1.month.selectedIndex == 3 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Balyk";}
-   if (document.form1.month.selectedIndex == 3 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Guzy";}
-   if (document.form1.month.selectedIndex == 4 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Guzy";}
-   if (document.form1.month.selectedIndex == 4 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Öküzçe";}
-   if (document.form1.month.selectedIndex == 5 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Öküzçe";}
-   if (document.form1.month.selectedIndex == 5 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Ekizler";}
-   if (document.form1.month.selectedIndex == 6 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Ekizler";}
-   if (document.form1.month.selectedIndex == 6 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Leňňeç";}
-   if (document.form1.month.selectedIndex == 7 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Leňňeç";}
-   if (document.form1.month.selectedIndex == 7 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Ýolbars";}
-   if (document.form1.month.selectedIndex == 8 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Ýolbars";}
-   if (document.form1.month.selectedIndex == 8 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Sünbüle";}
-   if (document.form1.month.selectedIndex == 9 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Sünbüle";}
-   if (document.form1.month.selectedIndex == 9 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Terezi";}
-   if (document.form1.month.selectedIndex == 10 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Terezi";}
-   if (document.form1.month.selectedIndex == 10 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Içýan";}
-   if (document.form1.month.selectedIndex == 11 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Içýan";}
-   if (document.form1.month.selectedIndex == 11 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Keman";}
-   if (document.form1.month.selectedIndex == 12 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Keman";}
-   if (document.form1.month.selectedIndex == 12 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Owlak";}
+   if (document.form1.month.selectedIndex == 1 && document.form1.date.selectedIndex <=19) {document.form1.sign.value = "Oğlak";}
+   if (document.form1.month.selectedIndex == 1 && document.form1.date.selectedIndex >=20) {document.form1.sign.value = "Kova";}
+   if (document.form1.month.selectedIndex == 2 && document.form1.date.selectedIndex <=18) {document.form1.sign.value = "Kova";}
+   if (document.form1.month.selectedIndex == 2 && document.form1.date.selectedIndex >=19) {document.form1.sign.value = "Balık";}
+   if (document.form1.month.selectedIndex == 3 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Balık";}
+   if (document.form1.month.selectedIndex == 3 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Koç";}
+   if (document.form1.month.selectedIndex == 4 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Koç";}
+   if (document.form1.month.selectedIndex == 4 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Boğa";}
+   if (document.form1.month.selectedIndex == 5 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Boğa";}
+   if (document.form1.month.selectedIndex == 5 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "İkizler";}
+   if (document.form1.month.selectedIndex == 6 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "İkizler";}
+   if (document.form1.month.selectedIndex == 6 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Yengeç";}
+   if (document.form1.month.selectedIndex == 7 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Yengeç";}
+   if (document.form1.month.selectedIndex == 7 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Aslan";}
+   if (document.form1.month.selectedIndex == 8 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Aslan";}
+   if (document.form1.month.selectedIndex == 8 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Başak";}
+   if (document.form1.month.selectedIndex == 9 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Başak";}
+   if (document.form1.month.selectedIndex == 9 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Terazi";}
+   if (document.form1.month.selectedIndex == 10 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Terazi";}
+   if (document.form1.month.selectedIndex == 10 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Akrep";}
+   if (document.form1.month.selectedIndex == 11 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Akrep";}
+   if (document.form1.month.selectedIndex == 11 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Yay";}
+   if (document.form1.month.selectedIndex == 12 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Yay";}
+   if (document.form1.month.selectedIndex == 12 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Oğlak";}
 
    if (document.form1.month.selectedIndex == "x" || document.form1.date.selectedIndex == "y") return;
  }
 
 function validate() {
-   if (document.form1.month.selectedIndex == 2 && document.form1.date.selectedIndex > 29) {alert("Fewral aýy iň köp 29 gün bolup bilýar, haýyş edýäs täzeden saýlaň."); return false;}
-   if (document.form1.month.selectedIndex == 4 && document.form1.date.selectedIndex == 31) {alert("Aprel aýy 30 günlük, haýyş edýäs täzeden saýlaň."); return false;}
-   if (document.form1.month.selectedIndex == 6 && document.form1.date.selectedIndex == 31) {alert("Iýun aýy 30 günlük, haýyş edýäs täzeden saýlaň."); return false;}
-   if (document.form1.month.selectedIndex == 9 && document.form1.date.selectedIndex == 31) {alert("Sentýabr aýy 30 günlük, haýyş edýäs täzeden saýlaň."); return false;}
-   if (document.form1.month.selectedIndex == 11 && document.form1.date.selectedIndex == 31) {alert("Noýabr aýy 30 günlük, haýyş edýäs täzeden saýlaň."); return false;}
+   if (document.form1.month.selectedIndex == 2 && document.form1.date.selectedIndex > 29) {alert("Lütfen geçerli tarih giriniz."); return false;}
+   if (document.form1.month.selectedIndex == 4 && document.form1.date.selectedIndex == 31) {alert("Lütfen geçerli tarih giriniz."); return false;}
+   if (document.form1.month.selectedIndex == 6 && document.form1.date.selectedIndex == 31) {alert("Lütfen geçerli tarih giriniz."); return false;}
+   if (document.form1.month.selectedIndex == 9 && document.form1.date.selectedIndex == 31) {alert("Lütfen geçerli tarih giriniz."); return false;}
+   if (document.form1.month.selectedIndex == 11 && document.form1.date.selectedIndex == 31) {alert("Lütfen geçerli tarih giriniz."); return false;}
 else{
 return true;
 }
@@ -285,7 +285,7 @@ return true;
 <table border="0" bgcolor="gree" cellspacing="0" cellpadding="1">
   <tr>
     <td>
-        <font size="1" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;Aý&nbsp;</b></font>
+        <font size="1" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;Ay&nbsp;</b></font>
     </td>
     <td>
         <font size="1" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;Gün&nbsp;</b></font>
@@ -294,30 +294,30 @@ return true;
         <font size="3" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;&nbsp;<b>:</b>&nbsp;</b></font>
     </td>
     <td>
-        <font size="1" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;Burçuňyz&nbsp;</b></font>
+        <font size="1" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;Burcunuz&nbsp;</b></font>
     </td>
   </tr>
   <tr>
     <td>
                     &nbsp;<select name="month">
-                    <option value="x" selected>Saýlaň</option>
-                    <option value="1">Ýanwar</option>
-                    <option value="2">Fewral</option>
+                    <option value="x" selected>Seçiniz</option>
+                    <option value="1">Ocak</option>
+                    <option value="2">Şubat</option>
                     <option value="3">Mart</option>
-                    <option value="4">Aprel</option>
-                    <option value="5">Maý</option>
-                    <option value="6">Iýun</option>
-                    <option value="7">Iýul</option>
-                    <option value="8">Awgust</option>
-                    <option value="9">Sentýabr</option>
-                    <option value="10">Oktýabr</option>
-                    <option value="11">Noýabr</option>
-                    <option value="12">Dekabr</option>
+                    <option value="4">Nisan</option>
+                    <option value="5">Mayis</option>
+                    <option value="6">Haziran</option>
+                    <option value="7">Temmuz</option>
+                    <option value="8">Ağustos</option>
+                    <option value="9">Eylül</option>
+                    <option value="10">Ekim</option>
+                    <option value="11">Kasım</option>
+                    <option value="12">Aralık</option>
                     </select>
     </td>
     <td>
                     &nbsp;<select name="date" onChange="validate()">
-                    <option value="y" selected>Saýlaň</option>
+                    <option value="y" selected>Seçiniz</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -352,7 +352,7 @@ return true;
                     </select>
     </td>
     <td>
-        &nbsp;<input name="sign" size="13" value="Hasaplanmady" />&nbsp;<input type="button" value="Hasaplaň" onClick="sunsign()">
+        &nbsp;<input name="sign" size="13" value="Hesaplanmadı" />&nbsp;<input type="button" value="Hesapla" onClick="sunsign()">
     </td>
   </tr>
 </table>
@@ -374,7 +374,7 @@ return true;
                     
                     
 
-<p align="center" style="margin-top: 5; margin-bottom: 0"><font face="arial" size="-1">Guwanç Sopyýew</font><br>
-<font face="arial, helvetica" size="-1">Tarapyndan Döredildi
+<p align="center" style="margin-top: 5; margin-bottom: 0"><font face="arial" size="-1">Powered by:</font><br>
+<font face="arial, helvetica" size="-1">Guvanch Sopiyev
 </p>
 <!--msnavigation--></td></tr><!--msnavigation--></table></body></html>
